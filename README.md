@@ -12,8 +12,9 @@ Streamlit web deployment for the final Gradient boosting model predicting in-hos
 
 ## Public deployment
 
-The application is configured for deployment on Streamlit Community Cloud.
-The public URL will be recorded here after cloud deployment is completed.
+The application is publicly available at:
+
+https://cto-hf-mortality-calculator.streamlit.app/
 
 No patient-level development or validation data are included in this
 repository.
