@@ -1,0 +1,103 @@
+{
+  "model_name": "Gradient boosting",
+  "outcome": "In-hospital death",
+  "threshold": 0.0700414692073173,
+  "features": [
+    "Hb",
+    "Crea",
+    "NT_ProBNP",
+    "NYHA",
+    "Vascular_recanalization"
+  ],
+  "feature_stats": {
+    "Hb": {
+      "min": 44.0,
+      "p25": 121.0,
+      "median": 135.0,
+      "p75": 147.0,
+      "max": 216.0
+    },
+    "Crea": {
+      "min": 11.0,
+      "p25": 65.03,
+      "median": 78.0,
+      "p75": 99.72999999999999,
+      "max": 1827.39
+    },
+    "NT_ProBNP": {
+      "min": 9.0,
+      "p25": 1122.0,
+      "median": 2736.0,
+      "p75": 5080.5,
+      "max": 34792.0
+    },
+    "NYHA": {
+      "min": 1.0,
+      "p25": 2.0,
+      "median": 3.0,
+      "p75": 4.0,
+      "max": 4.0
+    },
+    "Vascular_recanalization": {
+      "min": 0.0,
+      "p25": 0.0,
+      "median": 1.0,
+      "p75": 1.0,
+      "max": 1.0
+    }
+  },
+  "sample_size": {
+    "training": 1050,
+    "internal_validation": 450,
+    "external_validation": 803
+  },
+  "events": {
+    "training": 78,
+    "internal_validation": 26,
+    "external_validation": 57
+  },
+  "performance": [
+    {
+      "Cohort": "Training set",
+      "N": 1050,
+      "Events": 78,
+      "Event rate": "7.4%",
+      "AUROC": 0.879,
+      "AUPRC": 0.459,
+      "Brier score": 0.052,
+      "Sensitivity": 0.885,
+      "Specificity": 0.731,
+      "PPV": 0.209,
+      "NPV": 0.988,
+      "Accuracy": 0.743
+    },
+    {
+      "Cohort": "Internal validation set",
+      "N": 450,
+      "Events": 26,
+      "Event rate": "5.8%",
+      "AUROC": 0.877,
+      "AUPRC": 0.228,
+      "Brier score": 0.053,
+      "Sensitivity": 0.885,
+      "Specificity": 0.724,
+      "PPV": 0.164,
+      "NPV": 0.99,
+      "Accuracy": 0.733
+    },
+    {
+      "Cohort": "External validation set",
+      "N": 803,
+      "Events": 57,
+      "Event rate": "7.1%",
+      "AUROC": 0.675,
+      "AUPRC": 0.127,
+      "Brier score": 0.085,
+      "Sensitivity": 0.789,
+      "Specificity": 0.436,
+      "PPV": 0.097,
+      "NPV": 0.964,
+      "Accuracy": 0.461
+    }
+  ]
+}
